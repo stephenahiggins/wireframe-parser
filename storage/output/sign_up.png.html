@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Confirmation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body, html {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            background-color: #d3d3d3;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            background-color: #6d6d6d;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .icon img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        
+        .message {
+            margin-top: 20px;
+        }
+
+        .message h1 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .message p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="close">&times;</div>
+        <div class="icon">
+            <img src="https://via.placeholder.com/40?text=Img" alt="icon">
+        </div>
+        <div class="message">
+            <h1>Congratulations!</h1>
+            <p>You have successfully<br>sign up</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+        input, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="date"]::-webkit-inner-spin-button,
+        input[type="date"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input::placeholder {
+            color: #888;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+        .input-group input {
+            width: calc(50% - 5px);
+        }
+        .input-group select {
+            width: calc(50% - 5px);
+        }
+        .back-button, .submit-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            background-color: #444;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .back-button {
+            background: none;
+            color: black;
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="back-button">&larr;</button>
+        <h1>Sign Up</h1>
+
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Tanzim Kabir">
+
+        <label for="phone">Phone no.*</label>
+        <div class="input-group">
+            <input type="text" id="country-code" placeholder="+880">
+            <input type="text" id="phone" placeholder="1710008927">
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="name@example.com">
+
+        <div class="input-group">
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" placeholder="12/12/91">
+            </div>
+            <div>
+                <label for="gender">Gender*</label>
+                <select id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="country">Country*</label>
+        <select id="country">
+            <option>Bangladesh</option>
+            <option>India</option>
+            <option>Sri Lanka</option>
+            <option>Nepal</option>
+            <option>Bhutan</option>
+            <option>Myanmar</option>
+            <option>Pakistan</option>
+        </select>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="01, Shahidminar road, Shewra 1219">
+
+        <button class="submit-button">Submit</button>
+    </div>
+</body>
+</html>
